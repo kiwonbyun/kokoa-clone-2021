@@ -1,0 +1,133 @@
+.chatting-body {
+  background-color: rgb(171, 192, 209);
+  height: 11000vh;
+}
+.alt-header__column:last-child i {
+  margin-left: 10px;
+}
+.chatting-body .status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.chatting-body .status-bar,
+.chatting-body .alt-header {
+  top: 0;
+  background-color: rgb(171, 192, 209);
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat-timestamp {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 13px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.message-row img {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.message__info {
+  margin-top: 3px;
+  display: flex;
+  align-items: flex-end;
+}
+.message__author {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.message__bubble {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.message__time {
+  font-size: 6px;
+  opacity: 0.6;
+}
+.message-row-own {
+  justify-content: flex-end;
+}
+.message-row-own .message__bubble {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.message-row-own .message__info {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding: 5px 25px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.reply input {
+  padding: 10px;
+  border: var(--maid-border);
+  border-radius: 15px;
+}
+.reply i {
+  opacity: 0.6;
+}
+.reply-column:first-child {
+  width: 10%;
+}
+.reply-column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply-column:last-child input {
+  width: 100%;
+}
+.reply-column:last-child > i,
+.reply-column:last-child button {
+  position: absolute;
+  right: -18px;
+  top: 2px;
+}
+.reply-column:last-child > i {
+  right: 32px;
+  top: 2px;
+}
+.reply-column button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.reply-column button i {
+  opacity: 1;
+}

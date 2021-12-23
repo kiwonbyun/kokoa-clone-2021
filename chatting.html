@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatting - KokoaTalk</title>
+  </head>
+  <body class="chatting-body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:28</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">원빈</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen main-chat">
+      <div class="chat-timestamp">Tuesday, June 30, 2021</div>
+
+      <div class="message-row">
+        <img
+          src="https://img.huffingtonpost.com/asset/5ef1bbda2500002930eb3d3e.jpeg?cache=A4S3uCXvP2&ops=crop_0_254_2744_1936,scalefit_630_noupscale"
+        />
+        <div class="message-row__content">
+          <span class="message__author">원빈</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row-own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up?</span>
+            <span class="message__time">21:28</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://img.huffingtonpost.com/asset/5ef1bbda2500002930eb3d3e.jpeg?cache=A4S3uCXvP2&ops=crop_0_254_2744_1936,scalefit_630_noupscale"
+        />
+        <div class="message-row__content">
+          <span class="message__author">원빈</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >야 주윤복 싸움 잘하냐? 왜케까불어?</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply-column"><i class="far fa-plus-square fa-lg"></i></div>
+      <div class="reply-column">
+        <input type="text" placeholder="Write a message" />
+        <i class="far fa-smile-beam fa-2x"></i>
+        <button><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
