@@ -30,3 +30,6 @@
   background-color: rgba(0, 0, 0, 0.6);
   margin: 10px 0px;
 }
+.setting-screen {
+  transform: translateY(100px);
+}
