@@ -32,3 +32,16 @@
   height: 7px;
   right: 10px;
 }
+
+@keyframes spincog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: spincog 1s linear infinite;
+}

@@ -94,3 +94,21 @@
   background-color: gray;
   opacity: 0.2;
 }
+
+@keyframes heartbeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartbeat 2s ease-in-out infinite;
+}

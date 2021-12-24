@@ -1,6 +1,6 @@
 .chatting-body {
   background-color: rgb(171, 192, 209);
-  height: 11000vh;
+  height: 300vh;
 }
 .alt-header__column:last-child i {
   margin-left: 10px;
@@ -36,6 +36,32 @@
   border-radius: 25px;
   font-size: 13px;
 }
+@keyframes messageShowleft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes messageShowright {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row {
+  animation: messageShowleft 1s ease-in-out;
+}
+.message-row-own {
+  animation: messageShowright 1s ease-in-out;
+}
 .message-row {
   width: 100%;
   display: flex;
@@ -69,6 +95,7 @@
   font-size: 6px;
   opacity: 0.6;
 }
+
 .message-row-own {
   justify-content: flex-end;
 }
@@ -92,6 +119,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
 }
 .reply input {
   padding: 10px;
@@ -110,6 +138,7 @@
 }
 .reply-column:last-child input {
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 .reply-column:last-child > i,
 .reply-column:last-child button {
@@ -130,4 +159,23 @@
 }
 .reply-column button i {
   opacity: 1;
+}
+
+.reply .reply-column:first-child,
+.reply .reply-column:nth-child(2) i,
+.reply .reply-column:nth-child(2) button {
+  transition: all 0.5s ease-in-out;
+}
+.reply:focus-within .reply-column:first-child,
+.reply:focus-within .reply-column:nth-child(2) i,
+.reply:focus-within .reply-column:nth-child(2) button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
